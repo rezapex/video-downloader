@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>YouTube Video Downloader</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="dark-mode">
+    <div class="container">
+        <h1>YouTube Video Downloader</h1>
+        
+        <div class="input-group">
+            <label>YouTube URL:</label>
+            <input type="text" id="url-input" placeholder="Enter YouTube URL">
+        </div>
+        
+        <div class="input-group">
+            <label>Format:</label>
+            <div class="select-wrapper">
+                <select id="format-select">
+                    <option value="mp4">MP4</option>
+                    <option value="mp3">MP3</option>
+                </select>
+            </div>
+        </div>
+        
+        <div class="input-group">
+            <label>Quality:</label>
+            <div class="select-wrapper">
+                <select id="quality-select">
+                    <option value="auto">Auto</option>
+                    <option value="144">144p</option>
+                    <option value="240">240p</option>
+                    <option value="360">360p</option>
+                    <option value="480">480p</option>
+                    <option value="720">720p</option>
+                    <option value="1080">1080p</option>
+                    <option value="1440">1440p</option>
+                    <option value="2160">2160p (4K)</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="button-group">
+            <button id="download-btn">Download</button>
+            <button id="transcript-btn">Generate Transcript</button>
+            <button id="reset-btn">Reset</button>
+        </div>
+
+        <div id="status-message" class="status-message"></div>
+
+        <div class="mode-toggle">
+            <span>Dark Mode</span>
+            <label class="switch">
+                <input type="checkbox" id="mode-switch" checked>
+                <span class="slider round"></span>
+            </label>
+        </div>
+    </div>
+    <script src="renderer.js"></script>
+</body>
+</html>

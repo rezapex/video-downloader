@@ -1,0 +1,204 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #ffffff;
+    color: #000000;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark-mode {
+    background-color: #1a1a1a;
+    color: #ffffff;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s;
+}
+
+body.dark-mode .container {
+    background-color: #2d2d2d;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    color: #000000;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark-mode input[type="text"] {
+    background-color: #3d3d3d;
+    color: #ffffff;
+    border-color: #4d4d4d;
+}
+
+.select-wrapper {
+    position: relative;
+    width: 100%;
+}
+
+select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #ffffff;
+    color: #000000;
+    appearance: none;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark-mode select {
+    background-color: #3d3d3d;
+    color: #ffffff;
+    border-color: #4d4d4d;
+}
+
+.select-wrapper::after {
+    content: '▼';
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+
+body.dark-mode .select-wrapper::after {
+    color: #ffffff;
+}
+
+.button-group {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+button {
+    flex: 1;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#transcript-btn {
+    background-color: #2196F3;
+}
+
+#transcript-btn:hover {
+    background-color: #1976D2;
+}
+
+#reset-btn {
+    background-color: #f44336;
+}
+
+#reset-btn:hover {
+    background-color: #d32f2f;
+}
+
+.status-message {
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 4px;
+    text-align: center;
+    word-break: break-word;
+}
+
+.mode-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 20px;
+    gap: 10px;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+}
+
+input:checked + .slider {
+    background-color: #2196F3;
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+    transform: translateX(26px);
+}
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
