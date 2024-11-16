@@ -1,3 +1,8 @@
+# Large file handling
+# Use Git Large File Storage (LFS) for these files
+# Install Git LFS: https://git-lfs.github.com
+# Run: git lfs install && git lfs track "*.dmg" "*.app" "Electron Framework"
+
 # Dependency directories
 node_modules/
 jspm_packages/
@@ -11,7 +16,7 @@ out/
 *.exe
 *.zip
 
-# Large binary files (consider using Git LFS)
+# Large binary files
 *.bin
 *.dat
 *.iso
@@ -21,10 +26,17 @@ out/
 *.tgz
 
 # Electron Framework and large library files
-**/Electron Framework
+**/*Electron Framework*
 **/electron/dist
 **/Frameworks/
 **/node_modules/electron/dist
+**/Contents/Frameworks/
+
+# Specific large file patterns
+dist/**/*.dmg
+dist/**/*.app
+node_modules/**/Electron.app
+node_modules/**/Electron Framework
 
 # Optional npm cache directory
 .npm
@@ -89,6 +101,3 @@ pids
 
 # Electron-specific
 *-lock.json
-
-# Note: For large files, consider using Git Large File Storage (LFS)
-# Run: git lfs install && git lfs track "*.dmg" "*.app" "Electron Framework"
