@@ -102,3 +102,6 @@ pids
 
 # Electron-specific
 *-lock.json
+
+# repo mirror
+video-downloaded.git/
