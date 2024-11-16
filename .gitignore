@@ -11,6 +11,21 @@ out/
 *.exe
 *.zip
 
+# Large binary files (consider using Git LFS)
+*.bin
+*.dat
+*.iso
+*.img
+*.tar
+*.tar.gz
+*.tgz
+
+# Electron Framework and large library files
+**/Electron Framework
+**/electron/dist
+**/Frameworks/
+**/node_modules/electron/dist
+
 # Optional npm cache directory
 .npm
 
@@ -75,6 +90,5 @@ pids
 # Electron-specific
 *-lock.json
 
-# Large framework and library files
-**/Electron Framework
-**/node_modules/electron/dist
+# Note: For large files, consider using Git Large File Storage (LFS)
+# Run: git lfs install && git lfs track "*.dmg" "*.app" "Electron Framework"
