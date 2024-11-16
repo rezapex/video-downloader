@@ -2,6 +2,15 @@
 node_modules/
 jspm_packages/
 
+# Electron-builder output and distribution files
+dist/
+build/
+out/
+*.dmg
+*.app
+*.exe
+*.zip
+
 # Optional npm cache directory
 .npm
 
@@ -36,11 +45,6 @@ yarn-error.log*
 .AppleDouble
 .LSOverride
 
-# Electron-builder output
-dist/
-build/
-out/
-
 # Downloaded content (assuming this is a video downloader)
 downloads/
 *.mp4
@@ -59,7 +63,7 @@ downloads/
 *.sublime-project
 *.sublime-workspace
 
-# Compiled binary addons (https://nodejs.org/api/addons.html)
+# Compiled binary addons
 build/Release
 
 # Dependency directories
@@ -70,3 +74,7 @@ pids
 
 # Electron-specific
 *-lock.json
+
+# Large framework and library files
+**/Electron Framework
+**/node_modules/electron/dist
