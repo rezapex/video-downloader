@@ -6,6 +6,7 @@
 # Dependency directories
 node_modules/
 jspm_packages/
+venv/
 
 # Electron-builder output and distribution files
 dist/
