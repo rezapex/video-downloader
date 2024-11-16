@@ -27,7 +27,11 @@ A versatile desktop application for downloading YouTube videos, extracting audio
 There are two ways to run the application:
 
 ### Option 1: Using the Start Script
-- Double-click `start.sh` (for macOS/Linux)
+- If you encounter permission issues, first make the script executable:
+  ```
+  chmod +x start.sh
+  ```
+- Then double-click `start.sh` (for macOS/Linux)
 - Or run `./start.sh` in the terminal
 
 ### Option 2: Using npm
