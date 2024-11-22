@@ -5,13 +5,20 @@
   "main": "main.js",
   "scripts": {
     "start": "electron .",
-    "dev": "electron . --enable-logging"
+    "dev": "electron . --enable-logging",
+    "server": "node server.js"
   },
-  "keywords": ["youtube", "video", "downloader", "electron"],
+  "keywords": [
+    "youtube",
+    "video",
+    "downloader",
+    "electron"
+  ],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "electron": "^26.2.1",
+    "express": "^4.21.1",
     "fluent-ffmpeg": "^2.1.3",
     "youtube-transcript": "^1.2.1",
     "yt-dlp-exec": "*",
